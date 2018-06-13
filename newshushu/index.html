@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>传智学院信息登记表</title>
+		<style type="text/css">
+			 body{
+			 	 font-size: 12px;
+			 	 font-family: "微软雅黑";
+			 }
+			 *{
+			 	 padding: 0px;
+			 	 margin: 0px;
+			 	 border: 0px;	 
+			 }
+			 .all{
+			 	 width: 1431px;
+			 	 height: 717px;
+			 	 background: url(img/form_bg.jpg) no-repeat;
+                 position: relative;			 
+			 }
+			 form{
+			 	 width: 600px;
+			 	 height: 400px;
+			 	 margin: 50px auto;
+			 	 padding-left: 30px;
+			 	 position: absolute;
+			 	 left: 48%;
+			 	 top: 10%;
+			 }
+			 h2{
+			 	 text-align: center;
+			 	 margin: 20px 0px;
+			 }
+			 p{
+			 	margin-top: 20px;
+			 }
+			 p span{
+			 	width: 75px;
+			 	display: inline-block;
+			 	text-align: right;
+			 	padding-right:19px ;
+			 }
+			 p input{
+			 	width: 200px;
+			 	height: 18px;
+			 	border: 1px solid #38a1bf;
+			 	padding: 2px;
+			 }
+			 .lucky input{
+			 	width: 100px;
+			 	height: 24px;
+			 }
+			 .tijiao input{
+			 	width: 100px;
+			 	height: 30px;
+			 	margin-left: 75px;
+			 	margin-top:20px;
+			 	background: greenyellow;
+			 	color: white;
+			 	border-radius: 3px;
+			 	
+			 }
+		</style>
+	</head>
+	<body>
+		
+	   <div class="all">
+	   	 <form action="" method="get" autocomplete="off">
+	   	 	<h2>传智学院信息登记表</h2>
+	   	 	<p><span>用户登录名:</span><input type="text" name="user_name" value="myemail@163.com" disabled readonly/>（不能修改，只能查看）</p>
+	   	 	<p><span>真实姓名:</span><input type="text" name="name" placeholder="例如：王明" required autofocus/>（必须填写，只能输入汉字）</p>
+	   	   <p><span>真实年龄:</span><input type="number" name="age" value="18" value="18" min="15" max="120" required />(必须填写)</p>
+	   	   <p><span>出生日期:</span><input type="date" name="day" value="1999-11-23" required/>(必须填写)</p>
+	   	   <p><span>电子邮件:</span><input type="email" name="e_mail" placeholder="123456@qq.com" required/>(必须填写)</p>
+	   	   <p><span>身份证号:</span><input type="text" name="nub"  required/>(必须填写，能够以数字、字母x结尾的短身份证号)</p>
+	   	   <p><span>手机号码:</span><input type="tel" name="telphone"  required/>(必须填写)</p>
+	   	    <p><span>个人主页:</span><input type="url" list="urll" name="shushu" placeholder="http://www.itcast.cn"  required/>(选择网址)</p>
+            <datalist id="urll">
+            	 <option>http://www.itcast.cn</option>
+            	  <option>http://www.boxuegu.com</option>
+            	   <option>http://www.w3school.com.cn</option>
+            </datalist>	   	 
+            <p class="lucky"><span>幸运颜色:</span><input type="color" name="luckycolor" />(请选择你喜欢的颜色)</p>
+            <p class="tijiao">
+            	<input type="submit" value="提交" />
+            	<input type="reset" value="重置" />
+            </p>
+	   	 </form>
+	   </div>
+	</body>
+</html>
