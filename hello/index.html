@@ -5,29 +5,131 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<style type="text/css">
-		p {
-		   color: green;
-		   text-indent: 2em;
-		   line-height: 1.5;
-		}
-		
-		</style>
-		<script>
-			function color(str) {
-				document.body.style.backgroundColor=str;
+			table{
+				border: 1px solid;
+			    border-collapse: collapse;
 			}
-		</script>
+			td{
+				border: 1px solid;
+                width: 100px;
+                height: 60px;
+                text-align: center;
+                vertical-align: middle;
+			}
+		</style>
 	</head>
 	<body>
-		<p id="a" style="color: lightblue;"></p>
-		  <script type="text/javascript">
-			var a=document.getElementById("a");
-			a.style.color="lightblue";
-		  </script>
-		<input type="button" value="设为红色" onclick="color('red')" />
-		<input type="button" value="设为黄色" onclick="color('yellow')" />
-		<input type="button" value="设为蓝色" onclick="color('blue')" />
-		<input type="button" value="设为自定义颜色" onclick="color('#00ff00')" />
-		太强了吧
+		<table id="color">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+		
+		var oTable=document.getElementById('color');
+		var oTd=oTable.getElementsByTagName("td");
+		
+			for (var i = 0; i < oTd.length; i++) {
+				oTd[i].style.backgroundColor="hsl("+i%9*15+",50%,50%)";
+				oTd[i].innerHTML=i;
+			}
+			
+		</script>
 	</body>
 </html>
